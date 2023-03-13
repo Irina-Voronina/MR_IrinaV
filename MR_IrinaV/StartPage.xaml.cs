@@ -14,7 +14,7 @@ namespace MR_IrinaV
     public partial class StartPage : ContentPage
     {
         List<ContentPage> pages = new List<ContentPage>() { new Entry_Page(), new Timer_Page(), new BoxView_Page(), new Valgusfoor_Page(), new DateTime_Page(), new StepperSlider_Page(), new Lumememm_Page(), new Frame_Page() }; // index= 0,1,2,...
-        List<string> tekstid = new List<string> { "Ava entry leht", "Ava timer leht", "Ava box leht", "Ava frame leht" };
+        List<string> tekstid = new List<string> { "Ava Entry leht", "Ava Timer leht", "Ava Box leht", "Ava Valgusfoor leht", "Ava DateTime leht", "Ava StepperSlider leht", "Ava Lumememm leht", "Ava frame leht" };
         public StartPage()
         {
             StackLayout st = new StackLayout

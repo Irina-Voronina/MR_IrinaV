@@ -3,10 +3,161 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MR_IrinaV.Valgusfoor_Page">
     <ContentPage.Content>
+
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="as.webp" 
+                       HeightRequest="50" 
+                       Grid.Row="0" 
+                       Grid.Column="0"/>
+                <Label x:Name="lbl1" Text=" Welcome to &#x0a;Valgusfoor!" 
+                       TextColor="GreenYellow"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       LineBreakMode="WordWrap"
+                       BackgroundColor="DodgerBlue"
+                       VerticalOptions="StartAndExpand" 
+                       HorizontalOptions="StartAndExpand"
+                       Grid.Row="0" Grid.Column="1"/>
+                <Image Source="sa.webp" 
+                       HeightRequest="50" 
+                       Grid.Row="0" 
+                       Grid.Column="2"/>
+
+            </Grid>
+
+            <StackLayout x:Name="Container">
+
+                <Grid>
+
+                    <BoxView x:Name="BB"
+                     BackgroundColor="Black" 
+                     HeightRequest="465" 
+                     WidthRequest="165" 
+                     VerticalOptions="Center" 
+                     HorizontalOptions="Center" 
+                     CornerRadius="60"/>
+
+                    <StackLayout 
+                         Orientation="Vertical"
+                         VerticalOptions="StartAndExpand"
+                         HorizontalOptions="CenterAndExpand" 
+                         Margin="10">
+                        <Frame x:Name="punaneFrame" 
+                            CornerRadius="100" 
+                            BackgroundColor="LightGray" 
+                            Padding="20"
+                            Margin="100,0,100,0"
+                            WidthRequest="100" 
+                            HeightRequest="100"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand"
+                            BorderColor="Black">
+                            <Label x:Name="punaneLabel" 
+                           Text="punane" 
+                           TextColor="Black" 
+                           FontSize="17" 
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand"/>
+                        </Frame>
+                        <Frame x:Name="kollaneFrame" 
+                            CornerRadius="100" 
+                            BackgroundColor="LightGray" 
+                            Padding="20" 
+                            Margin="100,0,100,0"
+                            WidthRequest="100" 
+                            HeightRequest="100"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand"
+                            BorderColor="Black">
+                            <Label x:Name="kollaneLabel" 
+                           Text="kollane" 
+                           TextColor="Black" 
+                           FontSize="17" 
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand"/>
+                        </Frame>
+
+                        <Frame x:Name="rohelineFrame" 
+                            CornerRadius="100" 
+                            BackgroundColor="LightGray" 
+                            Padding="20"
+                            Margin="100,0,100,0"
+                            WidthRequest="100" 
+                            HeightRequest="100"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand"
+                            BorderColor="Black">
+                            <Label x:Name="rohelineLabel" 
+                           Text="roheline" 
+                           TextColor="Black" 
+                           FontSize="17" 
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand"/>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+
+            <Label x:Name="lbl3"
+                   Text="Нажми SISSE и включи светофор"
+                   FontSize="Subtitle"
+                   TextColor="DodgerBlue"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout 
+                Orientation="Horizontal" 
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="End"
+                Spacing="0">
+
+                <Button x:Name="ButtonSisse"
+                        Text="SISSE"
+                        BorderColor="DodgerBlue"
+                        BorderWidth="5"
+                        Clicked="OnButtonSisseClicked"
+                        HorizontalOptions="StartAndExpand" 
+                        Margin="0"/>
+
+                <Button x:Name="ButtonFlashing"
+                        Text="Flashing"
+                        TextColor="GreenYellow"
+                        BackgroundColor="DodgerBlue"
+                        Clicked="OnButtonFlashingClicked"
+                        HorizontalOptions="CenterAndExpand" 
+                        Margin="0"/>
+
+                <Button x:Name="ButtonRotate"
+                        Text="Rotate" 
+                        TextColor="GreenYellow"
+                        BackgroundColor="DodgerBlue"
+                        Clicked="OnButtonRotateClicked"
+                        HorizontalOptions="CenterAndExpand" 
+                        Margin="0"/>
+
+
+                <Button x:Name="ButtonValja"
+                        Text="VÄLJA"
+                        BorderColor="DodgerBlue"
+                        BorderWidth="5"
+                        Clicked="OnButtonValjaClicked"
+                        HorizontalOptions="EndAndExpand" 
+                        Margin="0"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -4,9 +4,18 @@
              x:Class="MR_IrinaV.Timer_Page">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label x:Name="lbl" 
+                Text="Welcome to Xamarin.Forms!"
+                   FontSize="Title"
+                   BackgroundColor="Bisque"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="btn"
+                    Text="Naita info"
+                    FontSize="Large"
+                    Clicked="btn_Clicked">
+
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

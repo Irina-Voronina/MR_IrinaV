@@ -12,8 +12,7 @@ namespace MR_IrinaV
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BoxView_Page : ContentPage
     {
-        public BoxView_Page()
-        {
+        
             BoxView box;
             public BoxView_Page()
             {
@@ -62,6 +61,6 @@ namespace MR_IrinaV
 
                 //}
             }
-        }
+        
     }
 }
