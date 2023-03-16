@@ -1,12 +1,183 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:shapes="clr-namespace:Xamarin.Forms.Shapes;assembly=Xamarin.Forms.Core"
              x:Class="MR_IrinaV.Lumememm_Page">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Image Source="snow.jpg" Aspect="AspectFill" />
+            <StackLayout>
+            
+
+            <StackLayout x:Name="Container" 
+                                Padding="0,30,0,0" 
+                                Margin="0"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"
+                                Spacing="0">
+
+                <StackLayout Spacing="-10">
+
+                        <!-- делаем ведро или шляпу снеговику -->
+                        <Frame x:Name="bubon"
+                            BackgroundColor="Black"
+                            WidthRequest="70"
+                            HeightRequest="50"
+                            CornerRadius="10"
+                            Padding="10"
+                            BorderColor="Black"
+                            HasShadow="True"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand"/>
+
+                        <Frame x:Name="vedro"
+                            BackgroundColor="Black"
+                            WidthRequest="100"
+                            HeightRequest="20"
+                            CornerRadius="10"
+                            Padding="5"
+                            BorderColor="Black"
+                            HasShadow="True"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand"/>
+
+
+                        <!-- делаем голову снеговику -->
+                        <Frame x:Name="pea"
+                            BackgroundColor="White"
+                            WidthRequest="150"
+                            HeightRequest="150"
+                            CornerRadius="100"
+                            Padding="5"
+                            BorderColor="DodgerBlue"
+                            HasShadow="True"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+
+                            <!-- делаем глаза снеговику -->
+                            <Grid>
+                                <StackLayout x:Name="glaza"
+                                        Spacing="0"
+                                        Orientation="Horizontal"
+                                        VerticalOptions="StartAndExpand"
+                                        HorizontalOptions="CenterAndExpand" 
+                                        Margin="20">
+                                    <BoxView x:Name="prav"
+                                            Color="Black" 
+                                            CornerRadius="20" 
+                                            WidthRequest="20" 
+                                            HeightRequest="20" 
+                                            HorizontalOptions="Start" 
+                                            VerticalOptions="Start"
+                                            Margin="10,10,10,10"/>
+                                    <BoxView x:Name="lev"
+                                            Color="Black" 
+                                            CornerRadius="20" 
+                                            WidthRequest="20" 
+                                            HeightRequest="20" 
+                                            HorizontalOptions="End" 
+                                            VerticalOptions="End" 
+                                            Margin="10,10,10,10"/>
+                                </StackLayout>
+
+                                <!-- делаем нос снеговику -->
+                                <BoxView x:Name="nos"
+                                        Color="Orange" 
+                                        WidthRequest="65"
+                                        HeightRequest="20"
+                                        CornerRadius="20"
+                                        TranslationX="20" 
+                                        TranslationY="25"
+                                        HorizontalOptions="Center" 
+                                        VerticalOptions="Center" 
+                                        Margin="0,30,0,70"
+                                        Rotation="15"/>
+
+                                <!-- делаем улыбку снеговику -->
+                                <shapes:Path Stroke="Black" 
+                                        StrokeThickness="5" 
+                                        HorizontalOptions="Center" 
+                                        VerticalOptions="Center"
+                                        Margin="0,30,0,0"
+                                        Data="M10,50 C30,70 70,70 90,50">
+                                </shapes:Path>
+                            </Grid>
+                        </Frame>
+
+                        <!-- делаем тело снеговику -->
+                        <Frame x:Name="telo"
+                            BackgroundColor="White"
+                            WidthRequest="200"
+                            HeightRequest="200"
+                            Padding="5"
+                            BorderColor="DodgerBlue"
+                            CornerRadius="100"
+                            HasShadow="True"
+                            HorizontalOptions="Center"
+                            VerticalOptions="CenterAndExpand">
+                        <!-- делаем пуговицы снеговику -->
+                        <Grid>
+                            <StackLayout x:Name="pugovki"
+                                Orientation="Vertical"
+                                VerticalOptions="StartAndExpand"
+                                HorizontalOptions="CenterAndExpand" 
+                                Margin="20">
+                                    <BoxView x:Name="p1"
+                                     Color="Black" 
+                                     CornerRadius="20" 
+                                     WidthRequest="20" 
+                                     HeightRequest="20" 
+                                     HorizontalOptions="Start" 
+                                     VerticalOptions="Start"
+                                     Margin="10,10,10,10"/>
+                                    <BoxView x:Name="p2"
+                                     Color="Black" 
+                                     CornerRadius="20" 
+                                     WidthRequest="20" 
+                                     HeightRequest="20" 
+                                     HorizontalOptions="End" 
+                                     VerticalOptions="End" 
+                                     Margin="10,10,10,10"/>
+                                    <BoxView x:Name="p3"
+                                     Color="Black" 
+                                     CornerRadius="20" 
+                                     WidthRequest="20" 
+                                     HeightRequest="20" 
+                                     HorizontalOptions="End" 
+                                     VerticalOptions="End" 
+                                     Margin="10,10,10,10"/>
+                            </StackLayout>
+                        </Grid>
+
+                    </Frame>
+
+                </StackLayout>
+                </StackLayout>
+                <Grid
+                    VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    Padding="0"
+                    Margin="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="HideButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="0" Grid.Column="0" Text="Спрятать" TextColor="DodgerBlue" BackgroundColor = "White" VerticalOptions="End" BorderColor="DodgerBlue" BorderWidth="3" Clicked="OnHideButtonClicked"/>
+                    <Button x:Name="ShowButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="0" Grid.Column="1" Text="Показать" TextColor="White" BackgroundColor = "DodgerBlue" VerticalOptions="End" BorderColor="DodgerBlue" BorderWidth="3" Clicked="OnShowButtonClicked"/>
+                    <Button x:Name="ColorButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="0" Grid.Column="2" Text="Цветной" TextColor="DodgerBlue" BackgroundColor = "White" VerticalOptions="End" BorderColor="DodgerBlue" BorderWidth="3" Clicked="OnColorButtonClicked"/>
+                    <Button x:Name="MeltButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="1" Grid.Column="0" Text="Растопить" TextColor="White" BackgroundColor = "DodgerBlue" VerticalOptions="End" BorderColor="DodgerBlue" BorderWidth="3" Clicked="OnMeltButtonClicked"/>
+                    <Button x:Name="DanceButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="1" Grid.Column="1" Text="Танец" TextColor="DodgerBlue" BackgroundColor = "White" VerticalOptions="End" BorderColor="DodgerBlue" BorderWidth="3" Clicked="OnDanceButtonClicked"/>
+                    <Button x:Name="FlipButton" CornerRadius="10" Padding="0" Margin="0" Grid.Row="1" Grid.Column="2" Text="Сальто" TextColor="White" BackgroundColor = "DodgerBlue" VerticalOptions="End" BorderColor="DodgerBlue" BorderWidth="3" Clicked="OnFlipButtonClicked"/>
+
+                </Grid>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

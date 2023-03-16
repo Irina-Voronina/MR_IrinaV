@@ -69,6 +69,9 @@
     <None Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\drawable\as.webp" />
     <AndroidResource Include="Resources\drawable\sa.webp" />
+    <AndroidResource Include="Resources\drawable\sn5.webp" />
+    <AndroidResource Include="Resources\drawable\sn1.webp" />
+    <AndroidResource Include="Resources\drawable\snz3.webp" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml" />
@@ -86,12 +89,35 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\flowers.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MR_IrinaV\MR_IrinaV.csproj">
       <Project>{BA586733-6DD2-4E51-8195-C96A9CE8A366}</Project>
       <Name>MR_IrinaV</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\funnily.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\snow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\neuro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\swirl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\uvula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\snz2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\snz5.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
