@@ -40,10 +40,10 @@ namespace MR_IrinaV
         List<string> tekstid = new List<string> { "Ava Entry leht", "Ava Timer leht", "Ava Box leht", "Valgusfoor", "Ava DateTime leht", "Ava StepperSlider leht", "Lumememm", "Ava Frame leht", "Ava Image leht", "Image***", "Ava Pop_Up leht", "Anketa", "Guess" };
         
         // создаем список цветов и инициализируем его объектами Color или LinearGradientBrush
-        List<Color> backgroundColors = new List<Color>() { Color.SpringGreen, Color.SpringGreen, Color.SpringGreen, Color.Default, Color.SpringGreen, Color.SpringGreen, Color.Default, Color.SpringGreen, Color.SpringGreen, Color.SpringGreen, Color.SpringGreen, Color.DodgerBlue, Color.DodgerBlue };
+        List<Color> backgroundColors = new List<Color>() { Color.SpringGreen, Color.SpringGreen, Color.SpringGreen, Color.Default, Color.SpringGreen, Color.SpringGreen, Color.Default, Color.SpringGreen, Color.SpringGreen, Color.DodgerBlue, Color.SpringGreen, Color.DodgerBlue, Color.DodgerBlue };
 
         // создаем список цветов текста и инициализируем его объектами Color
-        List<Color> textColors = new List<Color>() { Color.DarkOrange, Color.DarkOrange, Color.DarkOrange, Color.Green, Color.DarkOrange, Color.DarkOrange, Color.DodgerBlue, Color.DarkOrange, Color.DarkOrange, Color.Blue, Color.DarkOrange, Color.White, Color.White };
+        List<Color> textColors = new List<Color>() { Color.DarkOrange, Color.DarkOrange, Color.DarkOrange, Color.Green, Color.DarkOrange, Color.DarkOrange, Color.DodgerBlue, Color.DarkOrange, Color.DarkOrange, Color.White, Color.DarkOrange, Color.White, Color.White };
 
 
         public StartPage()
